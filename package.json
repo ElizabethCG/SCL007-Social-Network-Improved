@@ -2,52 +2,42 @@
   "name": "scl007-social-network",
   "version": "1.0.0",
   "description": "Creacion de una red social.",
-  "main": "scr/index.js",
-
+  "main": "scr/index.html",
   "scripts": {
-
-    "test": "jest"
+  "test": "jest --coverage",
+  "eslint": "eslint ext . js src/ test/",
+  "htmlhint":"htmlhint src/*.html",
+  "deploy": "gh-pages -d src/"
   },
-
   "jest": {
     "verbose": true,
     "collectCoverage": true
   },
-
-
-
-
   "author": "Squad 5 Red-Social",
   "license": "ISC",
   "eslint": "^5.12.1",
   "eslint-config-airbnb-base": "^13.1.0",
   "eslint-plugin-import": "^2.16.0",
-
-
-
-
-
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ElizabethCG/SCL007-Social-Network.git"
   },
-
-
-
-
   "bugs": {
     "url": "https://github.com/ElizabethCG/SCL007-Social-Network/issues"
   },
-
-
   "homepage": "https://github.com/ElizabethCG/SCL007-Social-Network#readme",
-
   "dependencies": {
-
-
-    "firebase": "^5.8.1"
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.5.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-jest": "^22.4.1",
+    "express": "^4.16.4",
+    "firebase": "^5.8.1",
+    "gh-pages": "^2.0.1",
+    "htmlhint": "^0.11.0",
+    "jest": "^24.5.0",
+    "save": "^2.3.3"
   }
-
-
 }
