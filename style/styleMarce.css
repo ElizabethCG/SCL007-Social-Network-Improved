@@ -1,0 +1,568 @@
+/*responsive celular*/
+@media screen and (max-width: 540px){
+    .divPerfilAjustWall{
+        width: 40%;
+        display:inline-block;
+        margin-left: 18%;
+      }
+       .divlogin{
+        width: 90%;
+        height: auto;
+        background:  #C9EEAC;
+        text-align: center;
+        color: black;
+        margin-top: 240px;
+        margin-left: 5%;
+        border-radius: 12px;
+        padding: 1%;
+        }
+    .imgResponsive{
+        width: 120px;
+        height: 120px;
+        border-radius: 90px;
+    }
+    .inputlogin{
+        width: 20%;
+        height: 100%;
+        color: black;
+        border-radius: 12px;
+    } 
+    .inputloginPerfil{
+        height: 100%;
+        color: black;
+        border-radius: 12px;
+    } 
+    .inputUserLogin{
+        width: 60%;
+        height: 10%;
+        color: black;
+        border-radius: 12px;
+    } 
+    .divMuro{
+        width: 85%;
+        height: auto;
+        background-color:  #C9EEAC;
+        color: white;
+        border-style: solid;
+        border-color: white;
+        border-radius: 25px;
+        text-align: left;
+        font-size: medium;
+        margin-left: 6%;
+        padding: 2%;
+    }
+    .divMuroPerfil{
+        width: 90%;
+        height: auto;
+        background-color:  #C9EEAC;
+        color: white;
+        border-style: solid;
+        border-color: white;
+        border-radius: 25px;
+        text-align: left;
+        font-size: medium;
+        margin-left: 4%;
+        margin-top: 4%;
+    }
+    .aMuro{
+        text-align: center;
+    }
+    .imgMuro{
+        height: 20px;
+        width: 20px;
+    }
+    .imgMuroBorrar{
+        height: 15px;
+        width: 15pxx;
+    }
+    .imgEdit{
+        width: 20px;
+        height: 20px;
+    }
+    .divHeaderMuro{
+        background-color: #FFFFFF;
+        text-align: center;
+        font-size: 18px;
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        
+      }
+      .divHeaderModal{
+        color: #000;
+        text-align: center;
+        font-size: 18px;
+        
+      }
+      .divBodyWall{
+        background-color: rgb(230, 225, 225);
+        text-align: justify;
+        font-size: 15px;
+      }
+
+      .divBodyResWall{
+        background-color:  rgb(230, 225, 225);
+        text-align: justify;
+        color: #000;
+        font-size: 13px;
+      } 
+
+        .divHeaderModaldos{
+            color: #000;
+            text-align: center;
+            font-size: 18px;
+          }
+          .divTable{
+            width: 90%;
+            height: auto;
+            background:  #C9EEAC;
+            text-align: center;
+            color: black;
+            margin-top: 240px;
+            margin-left: 5%;
+            border-radius: 12px;
+            padding: 1%;
+            }
+            .divTableSum{
+                width: 90%;
+                height: auto;
+                background:  #C9EEAC;
+                text-align: center;
+                font-size: 12px;
+                color: black;
+                margin-left: 5%;
+                border-radius: 12px;
+                padding: 1%;
+                }
+            .foodTable{
+                width: 70%;
+                height: 50px; 
+                font-size: 1em;
+            }
+            .divWallMessage{
+                width: 75%;
+                margin-left: 14%;
+                
+            }
+            .editPerfil{
+                margin-left: 60%;
+                
+            }
+            .editPerfilWall{
+                margin-left: 7%;
+            }
+            .foodTableName{
+                text-align: left;
+                font-size: 11px;
+            
+              }
+              .textSize{
+                font-size: 11px;
+                height: 10px;
+                width: 15px;
+            }
+      }
+      /*div que edita información de usuario si lo desea*/
+/*responsive otros dispositivos*/
+@media screen and (min-width: 540px) and (max-width: 720px){
+    .divlogin{
+        width: 90%;
+        height: auto;
+        background:  #C9EEAC;
+        text-align: center;
+        color: black;
+        margin-top: 240px;
+        margin-left: 5%;
+        border-radius: 12px;
+        padding: 1%;
+        }
+    .imgResponsive{
+        width: 120px;
+        height: 120px;
+        border-radius: 90px;
+    }
+    .inputlogin{
+        width: 20%;
+        height: 100%;
+        color: black;
+        border-radius: 12px;
+        font-size: 18px;
+    } 
+    .inputloginPerfil{
+        height: 100%;
+        color: black;
+        border-radius: 12px;
+    } 
+    .inputUserLogin{
+        width: 60%;
+        height: 10%;
+        color: black;
+        border-radius: 12px;
+        font-size: 18px;
+    } 
+    .divMuro{
+        width: 85%;
+        height: auto;
+        background-color:  #C9EEAC;
+        color: white;
+        border-style: solid;
+        border-color: white;
+        border-radius: 25px;
+        text-align: left;
+        font-size: medium;
+        margin-left: 6%;
+        padding: 2%;
+    }
+    .divMuroPerfil{
+        width: 90%;
+        height: auto;
+        background-color:  #C9EEAC;
+        color: white;
+        border-style: solid;
+        border-color: white;
+        border-radius: 25px;
+        text-align: left;
+        font-size: medium;
+        margin-left: 4%;
+        margin-top: 4%;
+    }
+    .aMuro{
+        text-align: center;
+    }
+    .imgMuro{
+        height: 20px;
+        width: 20px;
+    }
+    .imgMuroBorrar{
+        height: 15px;
+        width: 15pxx;
+    }
+    .imgEdit{
+        width: 20px;
+        height: 20px;
+    }
+    .divHeaderMuro{
+        background-color: #FFFFFF;
+        text-align: center;
+        font-size: 18px;
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        
+      }
+      .divHeaderModal{
+        color: #000;
+        text-align: center;
+        font-size: 18px;
+        
+      }
+      .divBodyWall{
+        background-color: rgb(230, 225, 225);
+        text-align: justify;
+        font-size: 15px;
+      }
+
+      .divBodyResWall{
+        background-color:  rgb(230, 225, 225);
+        text-align: justify;
+        color: #000;
+        font-size: 13px;
+      } 
+
+        .divHeaderModaldos{
+            color: #000;
+            text-align: center;
+            font-size: 18px;
+          }
+          .divTable{
+            width: 90%;
+            height: auto;
+            background:  #C9EEAC;
+            text-align: center;
+            color: black;
+            margin-top: 240px;
+            margin-left: 5%;
+            border-radius: 12px;
+            padding: 1%;
+            }
+            .divTableSum{
+                width: 90%;
+                height: auto;
+                background:  #C9EEAC;
+                text-align: center;
+                font-size: 12px;
+                color: black;
+                margin-left: 5%;
+                border-radius: 12px;
+                padding: 1%;
+                }
+            .foodTable{
+                width: 70%;
+                height: 50px; 
+                font-size: 1em;
+            }
+            .divWallMessage{
+                width: 75%;
+                margin-left: 14%;
+                
+            }
+            .editPerfil{
+                margin-left: 60%;
+                
+            }
+            .editPerfilWall{
+                margin-left: 7%;
+            }
+            .foodTableName{
+                text-align: left;
+                font-size: 11px;
+            
+              }
+              .textSize{
+                font-size: 18px;
+                height: 15px;
+                width: 20px;
+            }
+}
+/*responsive tablet o superior*/
+@media screen and (min-width: 721px){
+    .divPerfilAjustWall{
+        display:inline-block;
+        margin-left: 30%;
+      }
+    .divlogin{
+        width: 90%;
+        height: auto;
+        background:  #C9EEAC;
+        text-align: center;
+        color: black;
+        margin-top: 240px;
+        margin-left: 5%;
+        border-radius: 12px;
+        padding: 1%;
+        }
+    .imgResponsive{
+        width: 200px;
+        height: 200px;
+        border-radius: 90px;
+    }
+    .inputlogin{
+        width: 20%;
+        height: 100%;
+        color: black;
+        border-radius: 12px;
+        font-size: 22px;
+    } 
+    .inputloginPerfil{
+        height: 100%;
+        color: black;
+        border-radius: 12px;
+        font-size: 22px;
+    } 
+    .inputUserLogin{
+        width: 60%;
+        height: 10%;
+        color: black;
+        border-radius: 12px;
+        font-size: 22px;
+    } 
+    .divMuro{
+        width: 65%;
+        height: auto;
+        background-color:  #C9EEAC;
+        color: white;
+        border-style: solid;
+        border-color: white;
+        border-radius: 25px;
+        text-align: left;
+        font-size: medium;
+        margin-left: 18%;
+        padding: 2%;
+    }
+    .divMuroPerfil{
+        width: 70%;
+        height: auto;
+        background-color:  #C9EEAC;
+        color: white;
+        border-style: solid;
+        border-color: white;
+        border-radius: 25px;
+        text-align: left;
+        font-size: medium;
+        margin-left: 17%;
+        margin-top: 4%;
+    }
+    .aMuro{
+        text-align: center;
+    }
+    .imgMuro{
+        height: 40px;
+        width: 40px;
+    }
+    .imgMuroBorrar{
+        height: 40px;
+        width: 40px;
+    }
+    .imgEdit{
+        width: 30px;
+        height: 30px;
+    }
+    .divHeaderMuro{
+        background-color: #FFFFFF;
+        text-align: center;
+        font-size: 29px;
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        
+      }
+      .divHeaderModal{
+        color: #000;
+        text-align: center;
+        font-size: 29px;
+        
+      }
+      .divBodyWall{
+        background-color: rgb(230, 225, 225);
+        text-align: justify;
+        font-size: 25px;
+      }
+
+      .divBodyResWall{
+        background-color:  rgb(230, 225, 225);
+        text-align: justify;
+        color: #000;
+        font-size: 23px;
+      } 
+
+        .divHeaderModaldos{
+            color: #000;
+            text-align: center;
+            font-size: 18px;
+          }
+          .divTable{
+            width: 90%;
+            height: auto;
+            background:  #C9EEAC;
+            text-align: center;
+            color: black;
+            margin-top: 240px;
+            margin-left: 5%;
+            border-radius: 12px;
+            padding: 1%;
+            }
+            .divTableSum{
+                width: 60%;
+                height: auto;
+                background:  #C9EEAC;
+                text-align: center;
+                font-size: 20px;
+                color: black;
+                margin-left: 21%;
+                border-radius: 12px;
+                padding: 1%;
+                }
+            .foodTable{
+                width: 70%;
+                height: 50px; 
+                font-size: 1em;
+            }
+            .divWallMessage{
+                width: 65%;
+                margin-left: 20%;
+                
+            }
+            .editPerfil{
+                margin-left: 60%;
+                
+            }
+            .editPerfilWall{
+                margin-left: 7%;
+            }
+            .foodTableName{
+                text-align: left;
+                font-size: 20px;
+            
+              }
+              .textSize{
+                  font-size: 18px;
+                  height: 15px;
+                  width: 20px;
+              }
+      }
+/*fondo de pantallas*/
+ .bodyImg{
+     background-image: url("../imagenes/found1.png");
+ }
+
+/*Estilo para el modal*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    background-image: url(../imagenes/found1.png);
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /*css de muro*/
+  .divFooterWall{
+    background-color: #FFFFFF;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+  }
+  .divSelect{
+      width: 25%;
+      display:inline-block;
+  }
+  .cerrarModal{
+      font-size: 30px;
+      margin-left: 90%;
+      font-weight: bold;
+  }
+
+  .divPerfilAjust{
+    width: 40%;
+    display:inline-block;
+    
+  }
+  .divPerfilAjustImg{
+    width: 40%;
+    display:inline-block;
+    
+  }
+
+  .recetasEstilo {
+    margin-left: 10%
+} 
