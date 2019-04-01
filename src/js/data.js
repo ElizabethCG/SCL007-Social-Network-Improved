@@ -24,7 +24,7 @@ function login(){
                         document.getElementById("userLogin").style.display = "none";
                         document.getElementById("userWall").style.display = "block";
                         document.getElementById("perfilUser").style.display = "block";
-                    }   
+                    }
                 }
             }
             if(!existe){
@@ -46,7 +46,7 @@ function login(){
         alert("Combinación de Usuario y Contraseña incorrecta!");
         // ...
       });
-    
+
 }
 //inicializa la conección entre base de datos y javascript
 function initialize(){
@@ -76,7 +76,7 @@ function showMessageFromFirebase(){
                     if(datoChild[keyChild].Eliminado === 0){
                         todosLosMensajes += "<div class='divBodyResWall'><a class='aMuro'>" + datoChild[keyChild].Nombre + " : " + datoChild[keyChild].Mensaje+"</a> <img src='imagenes/borrar.png' class='imgMuroBorrar' onclick=updateDeleteChild('"+key+"','"+keyChild+"','"+datoChild[keyChild].Email+"')> <img src='imagenes/editvegan.png' class='imgMuroBorrar' onclick=editMessageChild('"+key+"','"+keyChild+"')></br></div>";
                     }
-               } 
+               }
              });
              todosLosMensajes+="<div class='divFooterWall'><div class='divSelect'><img src='imagenes/palta.png' class='imgMuro' onclick=sumLike('"+key+"')>" + datos[key].Like +"</div><div class='divSelect'><img src='imagenes/comm.png' class='imgMuro' onclick=answerMessage('"+key+"')></div><div class='divSelect'><img src='imagenes/borrar.png' class='imgMuro' onclick=updateDelete('"+key+"','"+datos[key].Email+"')></div><div class='divSelect'><img src='imagenes/editvegan.png' class='imgMuro' onclick=editMessage('"+key+"')></div></div>"
              todosLosMensajes+="</div></br>";
@@ -341,7 +341,7 @@ function sendDataToFirebase(){
         imgMuro.src=url;
         let img=document.getElementById("imagenPerfil");
         img.src=url;
-      
+
       });
 }
 
@@ -374,7 +374,7 @@ function showMessagePerfilFirebase(){
              let refMessageChild=firebase.database().ref().child("mensaje").child(key);
              refMessageChild.on("value",function(snap){
                  let datoChild=snap.val();
-                 
+
                  for(let keyChild in datoChild){
                     if(datoChild[keyChild].Eliminado === 0){
                         todosLosMensajes += "<div class='divBodyResWall'><a class='aMuro'>" + datoChild[keyChild].Nombre + " : " + datoChild[keyChild].Mensaje+"</a> <img src='imagenes/borrar.png' class='imgMuroBorrar' onclick=updateDeleteChild('"+key+"','"+keyChild+"','"+datoChild[keyChild].Email+"')> <img src='imagenes/editvegan.png' class='imgMuroBorrar' onclick=editMessageChild('"+key+"','"+keyChild+"')></br></div>";
@@ -420,34 +420,34 @@ function editPerfil(){
 
 }
 //aparece tabla nutricional
-document.getElementById("tableNut").addEventListener("click",tableVisible);
-function tableVisible(){
-    document.getElementById("userWallPerfil").style.display="none";
-    document.getElementById("tablaNut").style.display="block";
-}
+// document.getElementById("tableNut").addEventListener("click",tableVisible);
+// function tableVisible(){
+//     document.getElementById("userWallPerfil").style.display="none";
+//     document.getElementById("tablaNut").style.display="block";
+// }
 
 //desaparece tabla nutricional
-document.getElementById("returnButton").addEventListener("click",tableInVisible);
-function tableInVisible(){
-    document.getElementById("userWallPerfil").style.display="block";
-    document.getElementById("tablaNut").style.display="none";
-}
+// document.getElementById("returnButton").addEventListener("click",tableInVisible);
+// function tableInVisible(){
+//     document.getElementById("userWallPerfil").style.display="block";
+//     document.getElementById("tablaNut").style.display="none";
+// }
 document.getElementById("returnWall").addEventListener("click",wallVisible);
 function wallVisible(){
     document.getElementById("userWallPerfil").style.display="none";
     document.getElementById("userWall").style.display="block";
 }
 
-document.getElementById("recetasVeg").addEventListener("click",recetaVisible);
-function recetaVisible(){
-   document.getElementById("userWallPerfil").style.display="none";
-   document.getElementById("recetas").style.display="block";
-}
-document.getElementById("returnButton").addEventListener("click",recetaInVisible);
-function recetaInVisible(){
-    document.getElementById("userWallPerfil").style.display="block";
-    document.getElementById("recetas").style.display="none";
-}
+// document.getElementById("recetasVeg").addEventListener("click",recetaVisible);
+// function recetaVisible(){
+//    document.getElementById("userWallPerfil").style.display="none";
+//    document.getElementById("recetas").style.display="block";
+// }
+// document.getElementById("returnButton").addEventListener("click",recetaInVisible);
+// function recetaInVisible(){
+//     document.getElementById("userWallPerfil").style.display="block";
+//     document.getElementById("recetas").style.display="none";
+// }
 
  //Parámetros para conexión de base de datos
 function initializeFirebase(){

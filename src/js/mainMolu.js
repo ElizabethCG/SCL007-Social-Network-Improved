@@ -133,6 +133,3 @@ function registerDiv(){
     document.getElementById("userLogin").style.display = "none";
     document.getElementById("userRegister").style.display = "block";
 }
-
-
-
