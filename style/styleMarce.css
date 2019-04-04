@@ -26,18 +26,18 @@
         height: 100%;
         color: black;
         border-radius: 12px;
-    } 
+    }
     .inputloginPerfil{
         height: 100%;
         color: black;
         border-radius: 12px;
-    } 
+    }
     .inputUserLogin{
         width: 60%;
         height: 10%;
         color: black;
         border-radius: 12px;
-    } 
+    }
     .divMuro{
         width: 85%;
         height: auto;
@@ -86,13 +86,13 @@
         border-color: black;
         border-width: 1px;
         border-style: solid;
-        
+
       }
       .divHeaderModal{
         color: #000;
         text-align: center;
         font-size: 18px;
-        
+
       }
       .divBodyWall{
         background-color: rgb(230, 225, 225);
@@ -105,7 +105,7 @@
         text-align: justify;
         color: #000;
         font-size: 13px;
-      } 
+      }
 
         .divHeaderModaldos{
             color: #000;
@@ -136,17 +136,17 @@
                 }
             .foodTable{
                 width: 70%;
-                height: 50px; 
+                height: 50px;
                 font-size: 1em;
             }
             .divWallMessage{
                 width: 75%;
                 margin-left: 14%;
-                
+
             }
             .editPerfil{
                 margin-left: 60%;
-                
+
             }
             .editPerfilWall{
                 margin-left: 7%;
@@ -154,7 +154,7 @@
             .foodTableName{
                 text-align: left;
                 font-size: 11px;
-            
+
               }
               .textSize{
                 font-size: 11px;
@@ -187,19 +187,19 @@
         color: black;
         border-radius: 12px;
         font-size: 18px;
-    } 
+    }
     .inputloginPerfil{
         height: 100%;
         color: black;
         border-radius: 12px;
-    } 
+    }
     .inputUserLogin{
         width: 60%;
         height: 10%;
         color: black;
         border-radius: 12px;
         font-size: 18px;
-    } 
+    }
     .divMuro{
         width: 85%;
         height: auto;
@@ -248,13 +248,13 @@
         border-color: black;
         border-width: 1px;
         border-style: solid;
-        
+
       }
       .divHeaderModal{
         color: #000;
         text-align: center;
         font-size: 18px;
-        
+
       }
       .divBodyWall{
         background-color: rgb(230, 225, 225);
@@ -267,7 +267,7 @@
         text-align: justify;
         color: #000;
         font-size: 13px;
-      } 
+      }
 
         .divHeaderModaldos{
             color: #000;
@@ -298,17 +298,17 @@
                 }
             .foodTable{
                 width: 70%;
-                height: 50px; 
+                height: 50px;
                 font-size: 1em;
             }
             .divWallMessage{
                 width: 75%;
                 margin-left: 14%;
-                
+
             }
             .editPerfil{
                 margin-left: 60%;
-                
+
             }
             .editPerfilWall{
                 margin-left: 7%;
@@ -316,7 +316,7 @@
             .foodTableName{
                 text-align: left;
                 font-size: 11px;
-            
+
               }
               .textSize{
                 font-size: 18px;
@@ -352,20 +352,20 @@
         color: black;
         border-radius: 12px;
         font-size: 22px;
-    } 
+    }
     .inputloginPerfil{
         height: 100%;
         color: black;
         border-radius: 12px;
         font-size: 22px;
-    } 
+    }
     .inputUserLogin{
         width: 60%;
         height: 10%;
         color: black;
         border-radius: 12px;
         font-size: 22px;
-    } 
+    }
     .divMuro{
         width: 65%;
         height: auto;
@@ -414,13 +414,13 @@
         border-color: black;
         border-width: 1px;
         border-style: solid;
-        
+
       }
       .divHeaderModal{
         color: #000;
         text-align: center;
         font-size: 29px;
-        
+
       }
       .divBodyWall{
         background-color: rgb(230, 225, 225);
@@ -433,7 +433,7 @@
         text-align: justify;
         color: #000;
         font-size: 23px;
-      } 
+      }
 
         .divHeaderModaldos{
             color: #000;
@@ -464,17 +464,17 @@
                 }
             .foodTable{
                 width: 70%;
-                height: 50px; 
+                height: 50px;
                 font-size: 1em;
             }
             .divWallMessage{
                 width: 65%;
                 margin-left: 20%;
-                
+
             }
             .editPerfil{
                 margin-left: 60%;
-                
+
             }
             .editPerfilWall{
                 margin-left: 7%;
@@ -482,7 +482,7 @@
             .foodTableName{
                 text-align: left;
                 font-size: 20px;
-            
+
               }
               .textSize{
                   font-size: 18px;
@@ -521,8 +521,9 @@
     background-image: url(../imagenes/found1.png);
   }
 
+
   /* The Close Button */
-  .close {
+  /* .close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
@@ -534,7 +535,7 @@
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
+  } */
   /*css de muro*/
   .divFooterWall{
     background-color: #FFFFFF;
@@ -555,14 +556,14 @@
   .divPerfilAjust{
     width: 40%;
     display:inline-block;
-    
+
   }
   .divPerfilAjustImg{
     width: 40%;
     display:inline-block;
-    
+
   }
 
   .recetasEstilo {
     margin-left: 10%
-} 
+}

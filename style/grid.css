@@ -63,3 +63,5 @@ footer{
 		margin:auto;
 		border-radius:0 0 22px 22px;
 }
+
+.modal{ display: none;}
