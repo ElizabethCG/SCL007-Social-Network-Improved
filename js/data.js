@@ -270,27 +270,10 @@ function sumLike(keySum) {
 }
 
 
-//para que el modal se cierre
-// window.onclick = function(event) {
-//     let modal = document.getElementById('myModal');
-//     if (event.target === modal) {
-//       modal.style.display = "none";
-//     }
-//
-//     let modal2 = document.getElementById('modalEdit');
-//     if (event.target === modal2) {
-//       modal2.style.display = "none";
-//     }
-//
-//     let modal3 = document.getElementById('ModalEditChild');
-//     if (event.target === modal3) {
-//       modal3.style.display = "none";
-//     }
-// }
-
 // PARA CERRAR EL MODAL DE CREACION DE COMENTARIOS
 document.getElementById("cerrarModal").addEventListener("click", closeModal)
 function closeModal() {
+    document.getElementById("mesageResponse").value = "";
     document.getElementById('myModal').style.display = "none";
 }
 
