@@ -25,7 +25,7 @@ function initializeFirebase() {
 
 
 
-
+// FUNCION PARA LOGUEARSE EN LA APLICACIÓN
 
 document.getElementById("login").addEventListener("click", login)
 
@@ -133,7 +133,7 @@ function closeModalEdit() {
 let keyEdit;
 //funcion que recibe y busca el mensaje
 
-function editMessage(key) { //aquí está el problema
+function editMessage(key) {
     let refmessage = firebase.database().ref().child("mensaje").child(key);
     refmessage.on("value", function (snap) {
         let datos = snap.val();
@@ -166,8 +166,8 @@ function updateComment() {
         refmessage.update({
             Mensaje: msg
         });
-document.getElementById("modalEdit").style.display = "none";
-document.getElementById('myModal').style.display = "none";
+document.getElementById("modalEdit").style.display = "none";//REVISAR SI SIRVE
+document.getElementById('myModal').style.display = "none";//REVISAR SI SIRVE
 
     }
     // REVISAR ESTO AQUÍ CIERRE EL MODAL

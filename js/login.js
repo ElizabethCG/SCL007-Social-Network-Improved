@@ -1,4 +1,18 @@
 
+
+// document.getElementById("menu").addEventListener("click", myFunction)
+// function myFunction() {
+//     var x = document.getElementById("myTopnav");
+//     if (x.className === "topnav") {
+//       x.className += " responsive";
+//     } else {
+//       x.className = "topnav";
+//     }
+//   }
+
+
+
+
 // Se declara función para registrar usuarios//
 document.getElementById("signIn").addEventListener("click", signIn)
 function signIn() {
@@ -23,37 +37,27 @@ function signIn() {
 }
 // Se declara función para ingresar una vez registrado//
 //document.getElementById("login").addEventListener("click", login)
-function login() {
+// function login() {
+//
+//     let email2 = document.getElementById('email2').value;
+//     let password2 = document.getElementById('password2').value;
+//
+//     firebase.auth().signInWithEmailAndPassword(email2, password2).then(function () {
+//         console.log('Ingresado');
+//         //se agrega codigo para buscar el usuario en la tabla de users
+//     })
+//         // si no se cumple alguna condición se ejecutara un error//
+//         .catch(function (error) {
+//             // Handle Errors here.
+//             let errorCode = error.code;
+//             let errorMessage = error.message;
+//             console.log(errorCode);
+//             console.log(errorMessage);
+//             alert("Combinación de Usuario y Contraseña incorrecta!");
+//             // ...
+//         });
+// }
 
-    let email2 = document.getElementById('email2').value;
-    let password2 = document.getElementById('password2').value;
-
-    firebase.auth().signInWithEmailAndPassword(email2, password2).then(function () {
-        console.log('Ingresado');
-        //se agrega codigo para buscar el usuario en la tabla de users
-    })
-        // si no se cumple alguna condición se ejecutara un error//
-        .catch(function (error) {
-            // Handle Errors here.
-            let errorCode = error.code;
-            let errorMessage = error.message;
-            console.log(errorCode);
-            console.log(errorMessage);
-            alert("Combinación de Usuario y Contraseña incorrecta!");
-            // ...
-        });
-}
-//imgWall este control dibujara la imagen
-function showImage(extension) {
-    let storageRef = firebase.storage().ref();
-    let starsRef = storageRef.child('images/' + document.getElementById("email2").value + "." + extension);
-    starsRef.getDownloadURL().then(function (url) {
-        // Insert url into an <img> tag to "download"
-        console.log(url);
-        let img = document.getElementById("imgWall");
-        img.src = url;
-    });
-}
 
 //Esta función monitorea si hay un nuevo registro de usuario o si hay una sesión abierta//
 // se agrega export para utilizar la función en data.js
@@ -90,8 +94,11 @@ function aparece(user) {
     let userDos = user;
     let contenido = document.getElementById('contenido');
     if (user.emailVerified) {
-        contenido.innerHTML = "<p>Bienvenido</p> <button onclick='cerrar()'>Cerrar sesión</button>";
+        contenido.innerHTML = "<p>Bienvenido</p> <button onclick='cerrar()'>Cerrar sesión</button>";//revisar
+      // document.getElementById('contenido').style.display = "block";
+
     }
+    // document.getElementById('contenido').style.display = "none";
 }
 
 //función para cerrar sesión//
@@ -132,4 +139,16 @@ document.getElementById("registerNew").addEventListener("click", registerDiv);
 function registerDiv() {
     document.getElementById("userLogin").style.display = "none";
     document.getElementById("userRegister").style.display = "block";
+}
+
+//imgWall este control dibujara la imagen
+function showImage(extension) {
+    let storageRef = firebase.storage().ref();
+    let starsRef = storageRef.child('images/' + document.getElementById("email2").value + "." + extension);
+    starsRef.getDownloadURL().then(function (url) {
+        // Insert url into an <img> tag to "download"
+        console.log(url);
+        let img = document.getElementById("imgWall");
+        img.src = url;
+    });
 }
