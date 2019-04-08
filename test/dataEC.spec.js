@@ -9,4 +9,4 @@ require('../src/js/mainEC.js');
   // it('returns `indicar qué retorna`', () => {
   //   expect(updateDelete()).toContainEqual("indicar un valor contenido en el retorno"]);
   // });
-});
+// });

@@ -25,7 +25,7 @@ function initializeFirebase() {
 
 
 
-
+// FUNCION PARA LOGUEARSE EN LA APLICACIÓN
 
 document.getElementById("login").addEventListener("click", login)
 
@@ -133,7 +133,7 @@ function closeModalEdit() {
 let keyEdit;
 //funcion que recibe y busca el mensaje
 
-function editMessage(key) { //aquí está el problema
+function editMessage(key) {
     let refmessage = firebase.database().ref().child("mensaje").child(key);
     refmessage.on("value", function (snap) {
         let datos = snap.val();
@@ -166,8 +166,8 @@ function updateComment() {
         refmessage.update({
             Mensaje: msg
         });
-document.getElementById("modalEdit").style.display = "none";
-document.getElementById('myModal').style.display = "none";
+document.getElementById("modalEdit").style.display = "none";//REVISAR SI SIRVE
+document.getElementById('myModal').style.display = "none";//REVISAR SI SIRVE
 
     }
     // REVISAR ESTO AQUÍ CIERRE EL MODAL
@@ -270,27 +270,10 @@ function sumLike(keySum) {
 }
 
 
-//para que el modal se cierre
-// window.onclick = function(event) {
-//     let modal = document.getElementById('myModal');
-//     if (event.target === modal) {
-//       modal.style.display = "none";
-//     }
-//
-//     let modal2 = document.getElementById('modalEdit');
-//     if (event.target === modal2) {
-//       modal2.style.display = "none";
-//     }
-//
-//     let modal3 = document.getElementById('ModalEditChild');
-//     if (event.target === modal3) {
-//       modal3.style.display = "none";
-//     }
-// }
-
 // PARA CERRAR EL MODAL DE CREACION DE COMENTARIOS
 document.getElementById("cerrarModal").addEventListener("click", closeModal)
 function closeModal() {
+    document.getElementById("mesageResponse").value = "";
     document.getElementById('myModal').style.display = "none";
 }
 
