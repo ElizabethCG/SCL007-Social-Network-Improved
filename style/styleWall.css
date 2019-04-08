@@ -39,7 +39,7 @@
         border-radius: 12px;
     }
     .divMuro{
-        width: 85%;
+        width: 70%;
         height: auto;
         background-color:  #C9EEAC;
         color: white;
@@ -48,7 +48,7 @@
         border-radius: 25px;
         text-align: left;
         font-size: medium;
-        margin-left: 6%;
+        margin-left: 15%;
         padding: 2%;
     }
     .divMuroPerfil{
@@ -68,16 +68,16 @@
         text-align: center;
     }
     .imgMuro{
-        height: 20px;
-        width: 20px;
+        height: 25px;
+        width: 25px;
     }
     .imgMuroBorrar{
-        height: 15px;
-        width: 15pxx;
+        height: 25px;
+        width: 25px;
     }
     .imgEdit{
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
     }
     .divHeaderMuro{
         background-color: #FFFFFF;
@@ -104,7 +104,7 @@
         background-color:  rgb(230, 225, 225);
         text-align: justify;
         color: #000;
-        font-size: 13px;
+        font-size: 15px;
       }
 
         .divHeaderModaldos{
@@ -201,7 +201,7 @@
         font-size: 18px;
     }
     .divMuro{
-        width: 85%;
+        width: 75%;
         height: auto;
         background-color:  #C9EEAC;
         color: white;
@@ -210,7 +210,7 @@
         border-radius: 25px;
         text-align: left;
         font-size: medium;
-        margin-left: 6%;
+        margin-left: 10%;
         padding: 2%;
     }
     .divMuroPerfil{
@@ -266,7 +266,7 @@
         background-color:  rgb(230, 225, 225);
         text-align: justify;
         color: #000;
-        font-size: 13px;
+        font-size: 15px;
       }
 
         .divHeaderModaldos{
@@ -400,8 +400,8 @@
         width: 40px;
     }
     .imgMuroBorrar{
-        height: 70px;
-        width: 70px;
+        height: 40px;
+        width: 40px;
     }
     .imgEdit{
         width: 30px;
