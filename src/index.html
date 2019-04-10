@@ -7,42 +7,54 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./style/styleWall.css">
   <link rel="stylesheet" href="./style/styleLogin.css">
-  <link rel="shortcut icon" href=""> 
+  <link rel="shortcut icon" href="#">
   <title>Social Vegan</title>
   <meta charset="utf-8">
 </head>
+
 
 <body class="bodyImg">
 
   <div class="topnav" id="myTopnav">
     <a href="#home" class="active">Home</a>
 
-    <div class="dropShop">
-      <button class="shopBtn"> Tiendas
+
+    <div class="dropdown">
+      <div id="perfilUser" class="buttonUsers active2">
+        <button class="dropbtn" id="callPerfil"> Perfil Usuario
+          <i class="fa fa-caret-down"></i>
+        </button>
+      </div>
+    </div>
+
+
+    <div class="dropdown">
+      <button class="dropbtn"> Tiendas
         <i class="fa fa-caret-down"></i>
       </button>
-      <div class="dropdown-shop">
+
+      <div class="dropdown-content">
         <a href="https://www.facebook.com/pmaestra/">Planta Maestra</a>
         <a href="https://www.lacasadelvegan.cl/">La Casa del Vegan</a>
       </div>
     </div>
 
 
-    <div class="dropBar">
-      <button class="barBtn"> Bar
+    <div class="dropdown">
+      <button class="dropbtn"> Bar
         <i class="fa fa-caret-down"></i>
       </button>
-      <div class="dropdown-bar">
+      <div class="dropdown-content">
         <a href="https://www.facebook.com/pepperland.bar/">Pepperland Bar</a>
         <a href="https://www.facebook.com/Barelchanchoseis/">El Chancho Seis Bar</a>
       </div>
     </div>
 
-    <div class="dropMakeUp">
-      <button class="makeUpBtn"> Cosmetica Vegana
+    <div class="dropdown">
+      <button class="dropbtn"> Cosmetica Vegana
         <i class="fa fa-caret-down"></i>
       </button>
-      <div class="dropdown-makeUp">
+      <div class="dropdown-content">
         <a href="https://www.facebook.com/KuyenRayen/">Kuyen Rayen</a>
         <a href="https://www.facebook.com/Verde.cosmetica">Verde Cosmética</a>
         <a
@@ -51,11 +63,11 @@
       </div>
     </div>
 
-    <div class="dropFootwear">
-      <button class="footwearBtn"> Calzado
+    <div class="dropdown">
+      <button class="dropbtn"> Calzado
         <i class="fa fa-caret-down"></i>
       </button>
-      <div class="dropdown-footwear">
+      <div class="dropdown-content">
         <a
           href="https://www.facebook.com/VerdeVidavegan/?eid=ARApeCq6JgYAkT1V9VaC1K77SRfI4rjp1ImaO7SgHmamlJzFssA4tTWVVpuLmw8sp4xIuF154QGAFfUo">Verde
           Vida </a>
@@ -63,11 +75,11 @@
       </div>
     </div>
 
-    <div class="dropArticle">
-      <button class="articleBtn"> Articulos
+    <div class="dropdown">
+      <button class="dropbtn"> Articulos
         <i class="fa fa-caret-down"></i>
       </button>
-      <div class="dropdown-article ">
+      <div class="dropdown-content">
         <a
           href="https://www.petalatino.com/blog/nuevo-estudio-sugiere-que-si-todos-fueramos-veganos-podriamos-salvar-8-millones-de-vidas-humanas-al-ano/">Peta
           Latino</a>
@@ -90,35 +102,19 @@
         <a href="https://www.facebook.com/SuculentaSangucheriaVegana/">Suculenta Sangucheria Vegana</a>
       </div>
     </div>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"  id="menu" >&#9776;</a>
-    <!-- <a href="javascript:void(0);" style="font-size:15px;" class="icon"  id="menu" >&#9776;</a> -->
+
+    <a href="javascript:void(0);" class="icon" id="menu">&#9776;</a>
 
   </div>
 
 
-
-  <!-- MOVER ESTO A UN ARCHIVO .JS -->
-   <script>
-     function myFunction() {
-       var x = document.getElementById("myTopnav");
-       if (x.className === "topnav") {
-         x.className += " responsive";
-       } else {
-         x.className = "topnav";
-       }
-     }
-   </script>
-
-  <!-- FIN MOVER -->
-
-
-
-
-  <div id="perfilUser" class="buttonUsers" style="display :none">
+  <!-- BOTON ORIGINAL CALLPERFIL -->
+  <!-- <div id="perfilUser" class="buttonUsers" style="display :none">
     <li><button id="callPerfil">Perfil Usuario</button></li>
-  </div>
+  </div> -->
 
-  <div id="userLogin" style="display: block" class="divlogin">
+
+  <div id="userLogin" class="divlogin">
     <!--se crea para mostrar el login-->
     <h2>Ingreso de Usuarios</h2>
     <p></p>
@@ -135,7 +131,7 @@
 
 
   <!-- Registro e Ingreso de usuarios -->
-  <div id="userRegister" style="display: none" class="divlogin">
+  <div id="userRegister" class="divlogin">
     <!--se crea para mostrar el registro de usuario-->
     <h4>Registro de Usuarios</h4>
     <input id="name" placeholder="Nombre" class="inputUserLogin">
@@ -145,7 +141,7 @@
     <button id="signIn" class="inputlogin"> Registrarse </button>
   </div>
 
-<!-- ESPACIO PARA BOTON SALIR -->
+  <!-- ESPACIO PARA BOTON SALIR     REVISAR ESTO -->
   <div id="contenido">
   </div>
   <br>
@@ -153,7 +149,7 @@
 
   <!-- Muro  -->
   <!-- Creación de post -->
-  <div id="userWall" style="display: none">
+  <div id="userWall">
     <!--se crea para mostrar el muro-->
     <div class="divMuro">
       <form id="formMessage" class="divHeaderModal">
@@ -175,7 +171,7 @@
 
 
   <!--Inicio modal para agregar un comentario-->
-  <div id="myModal" class="modal"> //moví a css "style="display: none""
+  <div id="myModal" class="modal">
     <!-- Modal content -->
     <div class="modal-content">
       <div class="cerrarModal"><input type="button" value="X" id="cerrarModal"></div>
@@ -219,12 +215,12 @@
 
 
   <!--Creando perfil de usuario-->
-  <div id="userWallPerfil" style="display: none">
+  <div id="userWallPerfil">
     <!--se crea para mostrar el muro-->
     <div class="divMuroPerfil">
       <!--Creando perfil de usuario-->
       <!--div que contiene comandos para editar si el usuario lo desea-->
-      <div id="divPerfil" style="display: block">
+      <div id="divPerfil">
         <div>
           <div class="divPerfilAjust">
             <input type="button" class="inputloginPerfil" id="returnWall" value="Volver">
@@ -250,47 +246,33 @@
         </div>
       </div>
 
-
       <p></p>
-
-    <!-- VER SI VALE LA PENA AGREGAR LA FUNCIONALIDAD DE SUBIR RECETAS, SINO BORRAR -->
-      <div>
-        <div>
-
-          <!--boton tabla nutricional-->
-          <!-- <input type="button" class="inputloginPerfil" id="tableNut" value="Tabla Nutricional">
-          <input type="button" class="inputloginPerfil" id="recetasVeg"  value="Recetas"> -->
-        </div>
-        <!-- <div></div> -->
+      <div id="messagePerfil">
       </div>
     </div>
 
-
     <p></p>
-    <div id="messagePerfil">
+
+
+    <!-- Para actualizar datos del perfil -->
+    <div id="divEdition" class="divlogin">
+      <h2>Actualización de datos</h2>
+      <p></p>
+      <input id="nameEdit" type="name" placeholder="Ingresa Nombre" class="inputUserLogin"> <br> <br>
+      <input id="mailEdit" type="mail" placeholder="Ingresa correo" class="inputUserLogin"> <br> <br>
+      <input type="file" id="imagEdit" name="file" accept="image/png, image/jpeg" class="inputUserLogin"><br> <br>
+      <!--boton para subir imagen, type=fyle-->
+      <button id="updateEdit" class="inputUserLogin"> Actualizar </button>
     </div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    <script src="./js/login.js" type="module"></script>
+    <script src="./js/data.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
   </div>
-
-  <p></p>
-
-
-  <!-- Para actualizar datos del perfil -->
-  <div id="divEdition" style="display: none" class="divlogin">
-    <h2>Actualización de datos</h2>
-    <p></p>
-    <input id="nameEdit" type="name" placeholder="Ingresa Nombre" class="inputUserLogin"> <br> <br>
-    <input id="mailEdit" type="mail" placeholder="Ingresa correo" class="inputUserLogin"> <br> <br>
-    <input type="file" id="imagEdit" name="file" accept="image/png, image/jpeg" class="inputUserLogin"><br> <br>
-    <!--boton para subir imagen, type=fyle-->
-    <button id="updateEdit" class="inputUserLogin"> Actualizar </button>
-  </div>
-
-
-
-  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
-  <script src="./js/login.js" type="module"></script>
-  <script src="./js/data.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </body>
 
 </html>

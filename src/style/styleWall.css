@@ -39,7 +39,7 @@
         border-radius: 12px;
     }
     .divMuro{
-        width: 85%;
+        width: 70%;
         height: auto;
         background-color:  #C9EEAC;
         color: white;
@@ -48,7 +48,7 @@
         border-radius: 25px;
         text-align: left;
         font-size: medium;
-        margin-left: 6%;
+        margin-left: 15%;
         padding: 2%;
     }
     .divMuroPerfil{
@@ -65,19 +65,36 @@
         margin-top: 4%;
     }
     .aMuro{
-        text-align: center;
+        display:block;
+        text-align: left;
     }
     .imgMuro{
-        height: 20px;
-        width: 20px;
+        height: 25px;
+        width: 25px;
     }
     .imgMuroBorrar{
-        height: 15px;
-        width: 15pxx;
+      /* display:block; */
+      padding-left: 155px;
+      padding-right: 25px;
+        height: 25px;
+        width: 25px;
     }
+
+    .imgMuroBorrar2{
+      /* display:inline-block; */
+      padding-left: 20px;
+      /* padding-right: 25px; */
+        height: 25px;
+        width: 25px;
+    }
+
+
     .imgEdit{
-        width: 20px;
-        height: 20px;
+       /* display:inline; */
+        width: 25px;
+        height: 25px;
+        /* padding-left: 20px;
+        padding-right: 25px; */
     }
     .divHeaderMuro{
         background-color: #FFFFFF;
@@ -104,7 +121,7 @@
         background-color:  rgb(230, 225, 225);
         text-align: justify;
         color: #000;
-        font-size: 13px;
+        font-size: 15px;
       }
 
         .divHeaderModaldos{
@@ -201,7 +218,7 @@
         font-size: 18px;
     }
     .divMuro{
-        width: 85%;
+        width: 75%;
         height: auto;
         background-color:  #C9EEAC;
         color: white;
@@ -210,7 +227,7 @@
         border-radius: 25px;
         text-align: left;
         font-size: medium;
-        margin-left: 6%;
+        margin-left: 10%;
         padding: 2%;
     }
     .divMuroPerfil{
@@ -228,6 +245,7 @@
     }
     .aMuro{
         text-align: center;
+        font-weight: bolder;
     }
     .imgMuro{
         height: 20px;
@@ -237,6 +255,15 @@
         height: 30px;
         width: 30px;
     }
+
+    .imgMuroBorrar2{
+      /* display:inline-block; */
+      padding-left: 20px;
+      /* padding-right: 25px; */
+        height: 25px;
+        width: 25px;
+    }
+
     .imgEdit{
         width: 20px;
         height: 20px;
@@ -266,7 +293,7 @@
         background-color:  rgb(230, 225, 225);
         text-align: justify;
         color: #000;
-        font-size: 13px;
+        font-size: 15px;
       }
 
         .divHeaderModaldos{
@@ -324,6 +351,8 @@
                 width: 20px;
             }
 }
+
+
 /*responsive tablet o superior*/
 @media screen and (min-width: 721px){
     .divPerfilAjustWall{
@@ -400,8 +429,16 @@
         width: 40px;
     }
     .imgMuroBorrar{
-        height: 70px;
-        width: 70px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .imgMuroBorrar2{
+      /* display:inline-block; */
+      padding-left: 20px;
+      /* padding-right: 25px; */
+        height: 25px;
+        width: 25px;
     }
     .imgEdit{
         width: 30px;
@@ -490,6 +527,9 @@
                   width: 20px;
               }
       }
+
+/*
+FORMATO GENERAL SIN RESPONSIVE       */
 /*fondo de pantallas*/
  .bodyImg{
      background-image: url("../imagenes/found1.png");
