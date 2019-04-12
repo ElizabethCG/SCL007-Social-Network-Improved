@@ -12,6 +12,8 @@
   "deploy": "gh-pages -d src/"
   },
 
+  "jest":{"verbose":true,
+  "collectCoverage":true},
 
 
 

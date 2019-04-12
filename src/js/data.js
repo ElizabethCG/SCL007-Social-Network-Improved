@@ -1,4 +1,6 @@
 
+import { validar, validar2,validar3} from './functions.js';
+
 window.onload = initialize;
 
 //inicializa la conección entre base de datos y javascript
@@ -32,6 +34,9 @@ document.getElementById("login").addEventListener("click", login)
 function login() {
     let email2 = document.getElementById('email2').value;
     let password2 = document.getElementById('password2').value;
+    validar (email2);
+    validar2(email2);
+    validar3(password2);
 
     firebase.auth().signInWithEmailAndPassword(email2, password2).then(function () {
         let refmessage = firebase.database().ref().child("users");
