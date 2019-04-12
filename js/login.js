@@ -21,7 +21,8 @@ function signIn() {
     // codigo desde firebase para crear usuario nuevo//
     firebase.auth().createUserWithEmailAndPassword(email, password)
         .then(function () {
-            verficar()
+            verficar();
+          
         })
 
         // si la función no se cumple se  ejecutará un error//
