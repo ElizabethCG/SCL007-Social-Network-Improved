@@ -22,7 +22,7 @@ function signIn() {
     firebase.auth().createUserWithEmailAndPassword(email, password)
         .then(function () {
             verficar();
-          
+
         })
 
         // si la función no se cumple se  ejecutará un error//
@@ -35,33 +35,12 @@ function signIn() {
             // ...
         });
 }
-// Se declara función para ingresar una vez registrado//
-//document.getElementById("login").addEventListener("click", login)
-// function login() {
-//
-//     let email2 = document.getElementById('email2').value;
-//     let password2 = document.getElementById('password2').value;
-//
-//     firebase.auth().signInWithEmailAndPassword(email2, password2).then(function () {
-//         console.log('Ingresado');
-//         //se agrega codigo para buscar el usuario en la tabla de users
-//     })
-//         // si no se cumple alguna condición se ejecutara un error//
-//         .catch(function (error) {
-//             // Handle Errors here.
-//             let errorCode = error.code;
-//             let errorMessage = error.message;
-//             console.log(errorCode);
-//             console.log(errorMessage);
-//             alert("Combinación de Usuario y Contraseña incorrecta!");
-//             // ...
-//         });
-// }
+
 
 
 //Esta función monitorea si hay un nuevo registro de usuario o si hay una sesión abierta//
 // se agrega export para utilizar la función en data.js
-export const stateChanged = function () {
+ const stateChanged = function () {
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
             console.log('existe usuario activo')
@@ -94,11 +73,11 @@ function aparece(user) {
     let userDos = user;
     let contenido = document.getElementById('contenido');
     if (user.emailVerified) {
-        contenido.innerHTML = "<p>Bienvenido</p> <button onclick='cerrar()'>Cerrar sesión</button>";//revisar
-      // document.getElementById('contenido').style.display = "block";
+        contenido.innerHTML = "<p>Bienvenido</p> <button onclick='cerrar()'>Cerrar sesión</button>";
+
 
     }
-    // document.getElementById('contenido').style.display = "none";
+
 }
 
 //función para cerrar sesión//

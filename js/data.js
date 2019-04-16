@@ -1,5 +1,4 @@
 
-import { validar, validar2,validar3} from './functions.js';
 
 window.onload = initialize;
 
@@ -34,9 +33,7 @@ document.getElementById("login").addEventListener("click", login)
 function login() {
     let email2 = document.getElementById('email2').value;
     let password2 = document.getElementById('password2').value;
-    validar (email2);
-    validar2(email2);
-    validar3(password2);
+
 
     firebase.auth().signInWithEmailAndPassword(email2, password2).then(function () {
         let refmessage = firebase.database().ref().child("users");
@@ -128,7 +125,6 @@ document.getElementById("cerrarModalEdit").addEventListener("click", closeModalE
 
 function closeModalEdit() {
     document.getElementById('modalEdit').style.display = "none";
-    // document.getElementById("myModal").style.display="none";
     document.getElementById('mesageResponseEdit').value = "";
 }
 
@@ -171,11 +167,11 @@ function updateComment() {
         refmessage.update({
             Mensaje: msg
         });
-document.getElementById("modalEdit").style.display = "none";//REVISAR SI SIRVE
-document.getElementById('myModal').style.display = "none";//REVISAR SI SIRVE
+document.getElementById("modalEdit").style.display = "none";
+document.getElementById('myModal').style.display = "none";
 
     }
-    // REVISAR ESTO AQUÍ CIERRE EL MODAL
+
     document.getElementById("modalEdit").style.display = "none";
     document.getElementById("mesageResponseEdit").value = "";
 }
@@ -191,13 +187,13 @@ function updateDelete(valor, email) {
 
             });
         }
-        document.getElementById("modalEdit").style.display = "none"; //revisar si hace algo
+        document.getElementById("modalEdit").style.display = "none";
     }
     else {
         alert("Solo el usuario propietario puede eliminar el mensaje");
     }
 
-  document.getElementById("modalEdit").style.display = "none";//revisar si esta linea hace algo
+  document.getElementById("modalEdit").style.display = "none";
 }
 
 
@@ -283,7 +279,7 @@ function closeModal() {
 }
 
 
-// CREO QUE ESTE NOMBRE NO CORRESPONDE. MAS BIEN ESTÁ ELIMINANDO UN MENSAJE????
+
 document.getElementById("btnModal").addEventListener("click", cerrarModal)
 function cerrarModal() {
     let usuario = document.getElementById("nameResponse").innerHTML;
@@ -297,7 +293,7 @@ function cerrarModal() {
         document.getElementById("myModal").style.display = "none";
     }
     else {
-        // modal.style.display = "none";
+
         alert("El mensaje o el usuario no puede estar en blanco");
         document.getElementById("myModal").style.display = "none";
     }
@@ -310,8 +306,8 @@ function cerrarModal() {
 //usuario será el nombre y correo de usuario registrado
 let keyAnswerMessage;
 function answerMessage(keyAnswer) {
-    //let messageAnswer = prompt("Respuesta");
-    keyAnswerMessage = keyAnswer;  // PARA QUE ESTÁ ASIGNANDO A OTRA VARIABLE ¿DONDE USA keyAnswerMessage?
+
+    keyAnswerMessage = keyAnswer;  
     let usuario = document.getElementById("welcomeuser").innerHTML;
     document.getElementById("nameResponse").innerHTML = usuario;
     document.getElementById("myModal").style.display = "block";
